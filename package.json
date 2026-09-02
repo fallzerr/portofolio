@@ -1,0 +1,18 @@
+{
+  "name": "portofolio",
+  "version": "1.0.0",
+  "description": "Portofolio web minimalis dan elegan yang dibangun dengan HTML, Tailwind/CSS, dan JavaScript dinamis.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "autoprefixer": "^10.5.4",
+    "postcss": "^8.5.26",
+    "tailwindcss": "^4.3.3"
+  }
+}

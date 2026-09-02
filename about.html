@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Fajarin Naufal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="site-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">My Fall.</a>
+            
+            <button class="menu-toggle" id="mobile-menu" aria-label="Menu Toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="cmd-trigger-btn" class="cmd-trigger-btn" title="Quick Search (Ctrl+K)">⌘K</button></li>
+                <li><button id="theme-toggle" class="btn-theme-toggle">Tema</button></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Konten Utama -->
+    <main class="main-content">
+        
+        <!-- Tentang Saya -->
+        <section class="section-spacing">
+            <h1 class="page-title">Tentang Saya</h1>
+            <div class="text-muted-block">
+                <p>
+                    Saya adalah mahasiswa di Universitas Trunojoyo Madura yang memiliki ketertarikan mendalam pada dunia pengembangan sistem dan analisis teknologi. Saya berfokus pada bagaimana sebuah perangkat lunak dan infrastruktur bekerja di balik layar dengan pendekatan yang efisien dan terstruktur.
+                </p>
+                <p>
+                    Saat ini saya terus belajar dan mengasah keterampilan melalui eksplorasi kode, analisis jaringan, serta pemecahan berbagai tantangan teknis. Saya percaya bahwa kualitas dan keandalan sistem dibangun dari pemahaman fondasi yang kuat.
+                </p>
+            </div>
+        </section>
+
+        <!-- Keahlian -->
+        <section>
+            <h2 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; margin-top: 0;">Area Fokus & Keahlian</h2>
+            <div class="skills-container">
+                <span class="skill-tag">Linux Administration</span>
+                <span class="skill-tag">Network Analysis</span>
+                <span class="skill-tag">System Troubleshooting</span>
+                <span class="skill-tag">Python Development</span>
+                <span class="skill-tag">Bash Scripting</span>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Fajarin Naufal Al Ghazir. All rights reserved.</p>
+    </footer>
+
+    <div id="cmd-palette-modal" class="cmd-modal-overlay">
+        <div class="cmd-modal-box">
+            <div class="cmd-input-wrapper">
+                <span class="cmd-search-icon">src</span>
+                <input type="text" id="cmd-search-input" class="cmd-search-field" placeholder="Ketik perintah atau navigasi..." autocomplete="off">
+                <span class="cmd-kbd-hint">ESC</span>
+            </div>
+            <div id="cmd-results-list" class="cmd-results-area">
+                <div class="cmd-item active" data-action="home">Buka Beranda (Home)</div>
+                <div class="cmd-item" data-action="projects">Lihat Proyek (Projects)</div>
+                <div class="cmd-item" data-action="contact">Hubungi Saya (Contact)</div>
+                <div class="cmd-item" data-action="theme">Ganti Tema (Dark/Light)</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

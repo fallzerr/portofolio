@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Fajarin Naufal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="site-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">My Fall.</a>
+            
+            <button class="menu-toggle" id="mobile-menu" aria-label="Menu Toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="cmd-trigger-btn" class="cmd-trigger-btn" title="Quick Search (Ctrl+K)">⌘K</button></li>
+                <li><button id="theme-toggle" class="btn-theme-toggle">Tema</button></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Konten Utama -->
+    <main class="main-content-wide">
+        <div class="contact-layout">
+            
+            <!-- Kiri: Info -->
+            <div>
+                <h1 class="page-title">Mari Berdiskusi</h1>
+                <p class="text-muted-block" style="font-size: 0.95rem; margin-bottom: 2rem;">
+                    Tertarik membahas pengembangan teknologi, peluang kolaborasi, atau bertukar ide seputar proyek sistem? Kirim pesan melalui formulir atau hubungi saya melalui platform di bawah ini.
+                </p>
+                
+                <div class="social-list">
+                    <a href="https://github.com/fallzerr" target="_blank" class="content-card social-card">
+                        <i data-feather="github" style="width: 18px; height: 18px; color: var(--text-muted);"></i>
+                        <span class="social-card-text">github.com/fallzerr</span>
+                    </a>
+                    
+                    <a href="https://linkedin.com/in/fajarin-naufal-185348375/" target="_blank" class="content-card social-card">
+                        <i data-feather="linkedin" style="width: 18px; height: 18px; color: var(--text-muted);"></i>
+                        <span class="social-card-text">LinkedIn Profile</span>
+                    </a>
+                    
+                    <a href="https://instagram.com/fall.ovaa/" target="_blank" class="content-card social-card">
+                        <i data-feather="instagram" style="width: 18px; height: 18px; color: var(--text-muted);"></i>
+                        <span class="social-card-text">@fall.ovaa</span>
+                    </a>
+                    
+                    <div class="content-card social-card">
+                        <i data-feather="message-circle" style="width: 18px; height: 18px; color: var(--text-muted);"></i>
+                        <span class="social-card-text">Discord: fall.ovaa</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kanan: Form -->
+            <div class="content-card form-box">
+                <form action="https://formspree.io/f/mnpqjvww" method="POST" class="form-group-flex">
+                    <div>
+                        <label class="form-label">Nama</label>
+                        <input type="text" name="name" required placeholder="Masukkan nama..." class="form-input">
+                    </div>
+                    
+                    <div>
+                        <label class="form-label">Email</label>
+                        <input type="email" name="email" required placeholder="Email Anda..." class="form-input">
+                    </div>
+                    
+                    <div>
+                        <label class="form-label">Pesan</label>
+                        <textarea name="message" rows="4" required placeholder="Ketik pesan Anda..." class="form-textarea"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Kirim Pesan</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Fajarin Naufal Al Ghazir. All rights reserved.</p>
+    </footer>
+
+    <div id="cmd-palette-modal" class="cmd-modal-overlay">
+        <div class="cmd-modal-box">
+            <div class="cmd-input-wrapper">
+                <span class="cmd-search-icon">src</span>
+                <input type="text" id="cmd-search-input" class="cmd-search-field" placeholder="Ketik perintah atau navigasi..." autocomplete="off">
+                <span class="cmd-kbd-hint">ESC</span>
+            </div>
+            <div id="cmd-results-list" class="cmd-results-area">
+                <div class="cmd-item active" data-action="home">Buka Beranda (Home)</div>
+                <div class="cmd-item" data-action="projects">Lihat Proyek (Projects)</div>
+                <div class="cmd-item" data-action="contact">Hubungi Saya (Contact)</div>
+                <div class="cmd-item" data-action="theme">Ganti Tema (Dark/Light)</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js">
+        feather.replace();
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fajarin Naufal - Portofolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="site-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">My Fall.</a>
+            
+            <button class="menu-toggle" id="mobile-menu" aria-label="Menu Toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="cmd-trigger-btn" class="cmd-trigger-btn" title="Quick Search (Ctrl+K)">⌘K</button></li>
+                <li><button id="theme-toggle" class="btn-theme-toggle">Tema</button></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <main class="main-content">
+        <p class="hero-subtitle">Mahasiswa Universitas Trunojoyo Madura</p>
+        
+        <h1 class="hero-title">
+            Fajarin Naufal Al Ghazir
+        </h1>
+        
+        <p class="hero-desc">
+            Berfokus pada pengembangan perangkat lunak, analisis sistem, serta pemecahan masalah teknologi dengan pendekatan yang efisien dan terstruktur.
+        </p>
+        
+        <div class="hero-actions">
+            <a href="projects.html" class="btn-primary-inline">Lihat Proyek</a>
+            <a href="contact.html" class="btn-outline">Hubungi Saya</a>
+        </div>
+        
+        <div class="content-card section-spacing" style="margin-top: 3rem;">
+            <div class="card-header-flex">
+                <h2 class="card-title-style" style="font-size: 1rem;">Server Status</h2>
+                <span class="card-badge" id="api-status-badge">Connecting...</span>
+            </div>
+            
+            <div class="analytics-minimal-flex">
+                <div class="analytics-item">
+                    <span class="analytics-label">Visits</span>
+                    <span id="stat-visits" class="analytics-value">-</span>
+                </div>
+                <div class="analytics-divider"></div>
+                <div class="analytics-item">
+                    <span class="analytics-label">Engine</span>
+                    <span class="analytics-value">Python REST</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card section-spacing shell-card-margin">
+            <div class="card-header-flex">
+                <h2 class="card-title-style shell-title-size">Interactive Web Shell</h2>
+                <span class="card-badge">SSH Simulation</span>
+            </div>
+            
+            <div class="web-shell-container">
+                <div id="shell-output" class="shell-output-area">
+                    <div class="shell-line text-muted">FallOS v1.0.0 (x86_64-env)</div>
+                    <div class="shell-line text-muted">Ketik 'help' untuk melihat daftar perintah.</div>
+                </div>
+                <div class="shell-input-row">
+                    <span class="shell-prompt">visitor@fall:~$</span>
+                    <input type="text" id="shell-input" class="shell-input-field" placeholder="ketik perintah di sini..." autocomplete="off">
+                </div>
+            </div>
+        </div>
+
+        <div class="availability-inline">
+            <span class="availability-dot"></span>
+            <span>Local time: <strong id="local-time-value">--:--:--</strong> (<span id="timezone-name">WIB</span>)</span>
+            <span class="availability-sep">/</span>
+            <span id="work-status-text" style="color: var(--text-muted);">Checking availability...</span>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Fajarin Naufal Al Ghazir. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal Command Palette Popup -->
+    <div id="cmd-palette-modal" class="cmd-modal-overlay">
+        <div class="cmd-modal-box">
+            <div class="cmd-input-wrapper">
+                <span class="cmd-search-icon">src</span>
+                <input type="text" id="cmd-search-input" class="cmd-search-field" placeholder="Ketik perintah atau navigasi..." autocomplete="off">
+                <span class="cmd-kbd-hint">ESC</span>
+            </div>
+            <div id="cmd-results-list" class="cmd-results-area">
+                <div class="cmd-item active" data-action="home">Buka Beranda (Home)</div>
+                <div class="cmd-item" data-action="projects">Lihat Proyek (Projects)</div>
+                <div class="cmd-item" data-action="contact">Hubungi Saya (Contact)</div>
+                <div class="cmd-item" data-action="theme">Ganti Tema (Dark/Light)</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

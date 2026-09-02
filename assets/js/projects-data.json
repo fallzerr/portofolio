@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Analisis Trafik & Jaringan",
+    "category": "Lab",
+    "description": "Simulasi identifikasi anomali jaringan menggunakan analisis log dan paket data.",
+    "tags": ["Networking", "Analysis"]
+  },
+  {
+    "title": "Eksplorasi Sistem & Troubleshooting",
+    "category": "Dokumentasi",
+    "description": "Laporan penyelesaian berbagai tantangan teknis dan konfigurasi sistem berbasis Linux.",
+    "tags": ["Linux", "System"]
+  },
+  {
+    "title": "Automasi Portofolio Web",
+    "category": "Development",
+    "description": "Pengembangan antarmuka web minimalis yang responsif dan elegan.",
+    "tags": ["HTML/CSS", "JavaScript"]
+  }
+]

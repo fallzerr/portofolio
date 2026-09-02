@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Fajarin Naufal Al Ghazir",
+  "jobTitle": "Mahasiswa & Tech Enthusiast",
+  "url": "https://github.com/fallzerr",
+  "alumniOf": "Universitas Trunojoyo Madura",
+  "knowsAbout": [
+    "Linux Administration",
+    "Network Analysis",
+    "Python Development",
+    "Web Engineering"
+  ]
+}
