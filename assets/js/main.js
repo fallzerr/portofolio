@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Logika Hamburger Menu (Mobile Responsive)
     const mobileMenu = document.getElementById("mobile-menu");
     const navMenu = document.querySelector(".nav-menu");
 
@@ -16,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 2. Logika Theme Switcher (Dark / Cream Light)
     const themeToggleBtn = document.getElementById("theme-toggle");
     
     if (themeToggleBtn) {
@@ -43,7 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 3. Logika Load Data Proyek Dinamis (JSON)
     const projectContainer = document.getElementById("dynamic-projects");
     if (projectContainer) {
         fetch("assets/js/projects-data.json")
@@ -69,7 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
             .catch(err => console.log("Gagal memuat data proyek:", err));
     }
 
-    // 4. Logika Live Analytics API Fetch (Backend Integration)
     const statVisits = document.getElementById("stat-visits");
     const apiStatusBadge = document.getElementById("api-status-badge");
 
@@ -98,7 +94,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // 5. Logika Tombol Salin Perintah Terminal (Quick Connect)
     const copyBtn = document.getElementById("copy-btn");
     const terminalCode = document.getElementById("terminal-code");
 
@@ -115,7 +110,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Logika Jam & Status Minimalis
     const localTimeValue = document.getElementById("local-time-value");
     const workStatusText = document.getElementById("work-status-text");
     const timezoneName = document.getElementById("timezone-name");
@@ -144,7 +138,6 @@ document.addEventListener("DOMContentLoaded", () => {
         setInterval(updateClock, 1000);
     }
 
-    // 8. Logika Interactive Web Shell / Terminal
     const shellInput = document.getElementById("shell-input");
     const shellOutput = document.getElementById("shell-output");
 
@@ -216,7 +209,6 @@ document.addEventListener("DOMContentLoaded", () => {
         shellOutput.appendChild(errLine);
     }
 
-    // 9. Logika Command Palette Popup (Ctrl+K / ⌘K)
     const cmdModal = document.getElementById("cmd-palette-modal");
     const cmdInput = document.getElementById("cmd-search-input");
     const cmdTriggerBtn = document.getElementById("cmd-trigger-btn");
@@ -239,13 +231,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     document.addEventListener("keydown", (e) => {
-        // Shortcut Ctrl + K atau Cmd + K
         if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
             e.preventDefault();
             const isOpen = cmdModal.classList.contains("active");
             toggleCmdPalette(!isOpen);
         }
-        // Tombol ESC untuk menutup
         if (e.key === "Escape") {
             toggleCmdPalette(false);
         }
@@ -257,7 +247,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Aksi navigasi cepat dari item popup
     document.querySelectorAll(".cmd-item").forEach(item => {
         item.addEventListener("click", () => {
             const action = item.getAttribute("data-action");
