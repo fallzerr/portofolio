@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     card.className = "content-card";
                     card.innerHTML = `
                         <div class="card-header-flex">
-                            <h2 class="card-title-style">${proj.title}</h2>
+                            ${proj.link ? `<a href="${proj.link}" target="_blank" class="card-title-link"><h2 class="card-title-style">${proj.title}</h2></a>` : `<h2 class="card-title-style">${proj.title}</h2>`}
                             <span class="card-badge">${proj.category}</span>
                         </div>
                         <p class="card-desc">${proj.description}</p>
