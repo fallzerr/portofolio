@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 projectContainer.innerHTML = "";
                 data.forEach(proj => {
                     const card = document.createElement("div");
-                    card.className = "content-card";
+                    card.className = "content-card";                    
                     card.innerHTML = `
                         <div class="card-header-flex">
                             ${proj.link ? `<a href="${proj.link}" target="_blank" class="card-title-link"><h2 class="card-title-style">${proj.title}</h2></a>` : `<h2 class="card-title-style">${proj.title}</h2>`}
